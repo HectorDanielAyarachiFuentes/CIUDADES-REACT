@@ -1,0 +1,49 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    padding: 10px; /* Espaciado interior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    list-style: none; /* Elimina las viñetas de la lista */
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 20px; /* Espaciado entre elementos de la lista */
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+    padding: 8px 12px; /* Espaciado interior de los enlaces */
+    border-radius: 5px; /* Añade bordes redondeados a los enlaces */
+    transition: background-color 0.3s, color 0.3s; /* Transición de color de fondo y texto de 0.3 segundos */
+  }
+  
+  /* Estilos de hover */
+  .navbar a:hover {
+    background-color: #ff6600; /* Cambia el color de fondo al pasar el cursor sobre el enlace */
+    color: #fff; /* Cambia el color del texto al pasar el cursor sobre el enlace */
+  }
+  
+  /* Animación de entrada en la barra de navegación */
+  @keyframes fadeInNav {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .navbar {
+    animation: fadeInNav 0.5s ease-in;
+  }
+  
+  /* Animaciones adicionales para otros elementos si es necesario */
+  
