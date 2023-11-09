@@ -47,4 +47,18 @@ npm create vite@latest [nombre-del-proyecto]
 
 * Para obtener más información sobre Vite, visita la documentación oficial: https://vitejs.dev/.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **¡Eso es todo!** Has configurado con éxito un proyecto de React con Vite y estás listo para comenzar a desarrollar tu aplicación web.
