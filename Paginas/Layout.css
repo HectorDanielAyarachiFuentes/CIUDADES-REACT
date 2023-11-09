@@ -1,7 +1,7 @@
 :root {
     --color-primary: #0077b6; /* Azul */
     --color-secondary: #f9a03f; /* Amarillo */
-    --color-background: #1a1a1d; /* Negro azabache */
+    --color-background: rgb(95, 88, 227); /* Negro azabache */
     --color-text: #ffffff; /* Blanco */
 }
 
