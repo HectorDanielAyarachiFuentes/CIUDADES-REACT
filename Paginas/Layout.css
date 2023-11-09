@@ -1,49 +1,68 @@
+:root {
+    --color-primary: #0077b6; /* Azul */
+    --color-secondary: #f9a03f; /* Amarillo */
+    --color-background: #1a1a1d; /* Negro azabache */
+    --color-text: #ffffff; /* Blanco */
+}
+
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #333; /* Color de fondo de la barra de navegación */
-    padding: 10px; /* Espaciado interior */
+    background-color: var(--color-background);
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .navbar ul {
-    list-style: none; /* Elimina las viñetas de la lista */
+}
+
+.navbar ul {
+    list-style: none;
     padding: 0;
     display: flex;
-  }
-  
-  .navbar li {
-    margin-right: 20px; /* Espaciado entre elementos de la lista */
-  }
-  
-  .navbar a {
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-    color: #fff; /* Color del texto de los enlaces */
-    padding: 8px 12px; /* Espaciado interior de los enlaces */
-    border-radius: 5px; /* Añade bordes redondeados a los enlaces */
-    transition: background-color 0.3s, color 0.3s; /* Transición de color de fondo y texto de 0.3 segundos */
-  }
-  
-  /* Estilos de hover */
-  .navbar a:hover {
-    background-color: #ff6600; /* Cambia el color de fondo al pasar el cursor sobre el enlace */
-    color: #fff; /* Cambia el color del texto al pasar el cursor sobre el enlace */
-  }
-  
-  /* Animación de entrada en la barra de navegación */
-  @keyframes fadeInNav {
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos de hover */
+.navbar a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+/* Animación de entrada en la barra de navegación */
+@keyframes fadeInNav {
     0% {
-      opacity: 0;
+        opacity: 0;
+        transform: translateY(-20px);
     }
     100% {
-      opacity: 1;
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  .navbar {
+}
+
+.navbar {
     animation: fadeInNav 0.5s ease-in;
-  }
-  
-  /* Animaciones adicionales para otros elementos si es necesario */
-  
+}
+
+/* Animación de cambio de color de fondo */
+@keyframes backgroundColorChange {
+    0% {
+        background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    }
+    50% {
+        background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
+    }
+    100% {
+        background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    }
+}
